@@ -1,0 +1,20 @@
+version: '0.1.0'
+config:
+  testRunner:
+    command: ./node_modules/.bin/mocha
+    args:
+      tap: --reporter=mocha-tap-reporter
+    setup:
+      commands:
+        - npm install
+    directory: coderoad
+  repo:
+    uri: https://github.com/PandaWhoCodes/roadcode_demo
+    branch: v0.1.0
+  dependencies:
+    - name: node
+      version: '>=10'
+levels:
+  - id: '1'
+    steps:
+      - id: '1.1'

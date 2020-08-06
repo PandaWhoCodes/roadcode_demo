@@ -9,7 +9,11 @@ config:
         - npm install
     directory: coderoad
   repo:
+<<<<<<< HEAD
     uri: https://github.com/PandaWhoCodes/roadcode_demo
+=======
+    uri: https://github.com/moT01/first-tut
+>>>>>>> 967355f1ad7825b24cae46f540e8c8505aae3fdd
     branch: v0.1.0
   dependencies:
     - name: node
